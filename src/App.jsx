@@ -1,51 +1,36 @@
-import { FaLinkedinIn } from "react-icons/fa";
 import "./index.css";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { IoLogoGithub } from "react-icons/io";
-import { FaXTwitter } from "react-icons/fa6";
+
+import Header from "./components/Header";
+import About from "./pages/About";
+import Work from "./pages/Work";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <section className="">
-      <div className="w-full max-w-6xl ml-auto mr-0 mt-6 px-4 sm:px-6 lg:px-8 mb-10">
-        <h1 className="font-rammetto text-3xl font-bold tracking-wide mb-2 ">
-          <div className="tracking-wider">Pranjali</div>{" "}
-          <div className="tracking-wider">Pongde.</div>
-        </h1>
+    <>
+      <Header />
+      <section id="home">
+        <Home />
+      </section>
 
-        <p className="font-sans text-md font-semibold max-w-[300px]">
-          I’m a front-end developer who wants to help make the internet a more
-          creative, accessible, and better place.
-        </p>
+      <section id="about">
+        <About />
+      </section>
 
-        <div className="flex space-x-6 mt-6 ">
-          <a
-            href="#"
-            className="hover:bg-[#fffdec] hover:rounded-full hover:p-2 w-fit hover:text-black"
-          >
-            <FaLinkedinIn />
-          </a>
-          <a
-            href="#"
-            className="hover:bg-[#fffdec] hover:rounded-full hover:p-2 w-fit hover:text-black"
-          >
-            <MdOutlineMailOutline />
-          </a>
-          <a
-            href="#"
-            className="hover:bg-[#fffdec] hover:rounded-full hover:p-2 w-fit hover:text-black"
-          >
-            <IoLogoGithub />
-          </a>
-          <a
-            href="#"
-            className="hover:bg-[#fffdec] hover:rounded-full hover:p-2 w-fit hover:text-black"
-          >
-            <FaXTwitter />
-          </a>
-        </div>
-      </div>
-    </section>
+      <section id="work">
+        <Work />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+    </>
   );
 };
 
