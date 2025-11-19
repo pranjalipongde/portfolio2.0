@@ -1,36 +1,32 @@
-import "./index.css";
-
+import React from "react";
 import Header from "./components/Header";
-import About from "./pages/About";
-import Work from "./pages/Work";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
+import Projects from "./components/Projects";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Skills from "./components/skills";
+import SidebarProfile from "./components/sidebar/SidebarProfile";
 
 const App = () => {
   return (
-    <>
+    <div className="min-h-screen bg-black text-[#fffdec] font-sans">
       <Header />
-      <section id="home">
-        <Home />
-      </section>
 
-      <section id="about">
-        <About />
-      </section>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-12 mt-10">
+        {/* LEFT SIDEBAR */}
+        <SidebarProfile />
 
-      <section id="work">
-        <Work />
-      </section>
+        {/* RIGHT CONTENT */}
+        <div className="md:col-span-2 space-y-16">
+          <Projects />
+          <Services />
+          <Skills />
+          <Contact />
+        </div>
+      </div>
 
-      <section id="projects">
-        <Projects />
-      </section>
-
-      <section id="contact">
-        <Contact />
-      </section>
-    </>
+      <Footer />
+    </div>
   );
 };
 
