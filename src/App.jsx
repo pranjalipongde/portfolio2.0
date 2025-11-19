@@ -4,9 +4,9 @@ import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Skills from "./components/skills";
 import SidebarProfile from "./components/sidebar/SidebarProfile";
 import Endorsements from "./components/Endorsements";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
