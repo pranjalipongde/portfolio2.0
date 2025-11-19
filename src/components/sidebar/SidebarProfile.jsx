@@ -87,23 +87,14 @@ const SidebarProfile = () => {
       </div>
 
       {/* CV Button */}
-      <div className="flex gap-2">
-        <a
-          href="/Pranjali-Resume.pdf"
-          download
-          className="block w-full text-center bg-yellow-300 text-black py-2 rounded-lg font-semibold hover:bg-yellow-200"
-        >
-          Download CV
-        </a>
 
-        {/* CTA Button */}
-        <a
-          href="#contact"
-          className="block w-full text-center bg-yellow-400 text-black py-2 rounded-lg font-semibold hover:bg-yellow-300"
-        >
-          Hire Me
-        </a>
-      </div>
+      <a
+        href="/Pranjali-Resume.pdf"
+        download
+        className="block w-full text-center bg-yellow-300 text-black py-2 rounded-lg font-semibold hover:bg-yellow-200"
+      >
+        Download CV
+      </a>
     </motion.aside>
   );
 };
