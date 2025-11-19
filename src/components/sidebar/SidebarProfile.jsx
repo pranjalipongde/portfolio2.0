@@ -30,7 +30,6 @@ const SidebarProfile = () => {
 
       {/* About Me */}
       <div>
-        <h2 className="text-xl font-rammetto mb-2">About Me</h2>
         <p className="text-sm text-white/70 leading-relaxed">
           I’m Pranjali, a frontend developer passionate about building clean,
           modern and high-converting websites using React and Tailwind.

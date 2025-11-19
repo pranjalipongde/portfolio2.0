@@ -2,57 +2,96 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const list = [
+  const projects = [
     {
-      title: "SaaS Landing",
-      desc: "High converting landing page design.",
-      tags: ["React", "Tailwind"],
+      title: "SaaS Landing Page",
+      desc: "High‑converting landing page built with React & Tailwind.",
+      img: "/project1.png",
+      performance: "95% Performance · 98% Best Practices",
+      lighthouse: "Lighthouse Score: 92",
       link: "#",
     },
     {
       title: "Portfolio Website",
-      desc: "Clean UI focused portfolio.",
-      tags: ["UI", "Responsive"],
+      desc: "Modern portfolio design with animations & dark mode.",
+      img: "/project2.png",
+      performance: "98% Performance · 100% SEO",
+      lighthouse: "Lighthouse Score: 96",
       link: "#",
     },
     {
       title: "Business Website",
-      desc: "Local business site redesign.",
-      tags: ["SEO", "Speed"],
+      desc: "Local business website redesign with improved UX.",
+      img: "/project3.png",
+      performance: "94% Performance · 97% Accessibility",
+      lighthouse: "Lighthouse Score: 91",
+      link: "#",
+    },
+    {
+      title: "E‑commerce UI",
+      desc: "Clean and fast UI for a modern ecommerce store.",
+      img: "/project4.png",
+      performance: "93% Performance · 95% Best Practices",
+      lighthouse: "Lighthouse Score: 90",
+      link: "#",
+    },
+    {
+      title: "Blog Platform",
+      desc: "SEO‑optimized blog platform with smooth animations.",
+      img: "/project5.png",
+      performance: "97% SEO · 95% Accessibility",
+      lighthouse: "Lighthouse Score: 94",
       link: "#",
     },
   ];
 
+  const visibleProjects = 4;
+
   return (
-    <section id="projects">
-      <h2 className="text-3xl font-rammetto mb-6">Featured Projects</h2>
+    <section id="projects" className="space-y-6">
+      {/* Header with View More button */}
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-3xl font-rammetto">Projects</h2>
+        <a
+          href="#"
+          className="text-sm underline hover:text-yellow-300 transition"
+        >
+          View More
+        </a>
+      </div>
 
       <div className="grid sm:grid-cols-2 gap-6">
-        {list.map((p, i) => (
+        {projects.slice(0, visibleProjects).map((p, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="p-6 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition"
+            className="p-5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition"
           >
+            {/* Project Image */}
+            {p.img && (
+              <img
+                src={p.img}
+                alt={p.title}
+                className="w-full h-40 object-cover rounded-lg mb-4 border border-white/10"
+              />
+            )}
+
+            {/* Title + Description */}
             <h3 className="text-xl font-semibold mb-1">{p.title}</h3>
             <p className="text-sm text-white/70 mb-3">{p.desc}</p>
 
-            <div className="flex flex-wrap gap-2 mb-4">
-              {p.tags.map((t) => (
-                <span
-                  key={t}
-                  className="text-xs px-3 py-1 rounded-full bg-white/10 border border-white/10"
-                >
-                  {t}
-                </span>
-              ))}
+            {/* Performance Section */}
+            <div className="text-xs text-white/60 space-y-1 mb-4">
+              <p>⚡ {p.performance}</p>
+              <p>📊 {p.lighthouse}</p>
             </div>
 
             <a
               href={p.link}
+              target="_blank"
               className="text-yellow-300 text-sm hover:underline"
             >
               View Project →

@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import SidebarProfile from "./components/sidebar/SidebarProfile";
 import Endorsements from "./components/Endorsements";
 import Skills from "./components/Skills";
+import AboutMe from "./components/AboutMe";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
 
         {/* RIGHT CONTENT */}
         <div className="md:col-span-2 space-y-16">
+          <AboutMe />
           <Projects />
           <Services />
           <Skills />
