@@ -9,6 +9,11 @@ const Skills = () => {
     "Tailwind CSS",
     "Git",
     "Figma",
+    "Next.js",
+    "TypeScript",
+    "API Integration",
+    "Responsive Design",
+    "SEO Best Practices",
   ];
 
   return (
