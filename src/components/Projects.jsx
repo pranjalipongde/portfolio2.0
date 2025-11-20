@@ -5,15 +5,23 @@ const Projects = () => {
   const projects = [
     {
       title: "My Portfolio Website",
-      desc: "SEO‑optimized blog platform with smooth animations.",
+      desc: "Personal portfolio built with React and Tailwind CSS, featuring smooth animations, clean UI, and excellent SEO performance.",
       img: "/portfolio-web.png",
       performance: "100% SEO · 89% Accessibility",
       lighthouse: "Lighthouse Score: 99",
       link: "https://pranjali-pongde.vercel.app/",
     },
     {
+      title: "PWM Group",
+      desc: "Blog + resource platform built using Next.js and Tailwind CSS. Optimized for high SEO scores, fast performance, and strong accessibility.",
+      img: "/pwm-group.png",
+      performance: "91% SEO · 100% Accessibility",
+      lighthouse: "Lighthouse Score: 99",
+      link: "https://www.programmingwithmaurya.com/",
+    },
+    {
       title: "Manage Landing Page",
-      desc: "High‑converting landing page built with React & Tailwind.",
+      desc: "Marketing landing page built with HTML, CSS, and JavaScript using Vite. Designed for high conversions, strong structure, and a polished layout.",
       img: "/manage-landing-page.png",
       performance: "100% Performance · 100% Best Practices · 80% Accessibility",
       lighthouse: "Lighthouse Score: 100",
@@ -21,7 +29,7 @@ const Projects = () => {
     },
     {
       title: "Hilink Travel Website",
-      desc: "Modern portfolio design with animations & dark mode.",
+      desc: "Modern travel website UI developed with Next.js, React, and Tailwind CSS. Includes smooth animations, and clean responsive design.",
       img: "/hilink-web.png",
       performance: "98% Performance · 100% SEO · 90% Accessibility",
       lighthouse: "Lighthouse Score: 98",
@@ -30,15 +38,15 @@ const Projects = () => {
 
     {
       title: "Mini Spotify Clone",
-      desc: "Clean and fast UI for a modern ecommerce store.",
+      desc: "A minimal Spotify-inspired UI showcasing clean component structure, responsive design, and modern interface patterns.",
       img: "/mini-spotify.png",
       performance: "93% Performance · 95% Best Practices",
       lighthouse: "Lighthouse Score: 90",
       link: "#",
     },
     {
-      title: "Businesss Webite",
-      desc: "Local business website redesign with improved UX.",
+      title: "Business Website",
+      desc: "A redesign for a small business website, focusing on improved layout clarity, better UX flow, and a modern, professional look.",
       img: "/project3.png",
       performance: "94% Performance · 97% Accessibility",
       lighthouse: "Lighthouse Score: 91",
