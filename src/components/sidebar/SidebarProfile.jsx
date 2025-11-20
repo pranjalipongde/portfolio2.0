@@ -23,7 +23,6 @@ const SidebarProfile = () => {
         <Avatar src="/profile.jpg" name="Pranjali Pongde" size={80} />
         <div>
           <div className="text-base font-semibold">Pranjali Pongde</div>
-          <div className="text-xs text-white/70">Frontend Developer</div>
           <div className="mt-2">
             <span className="text-xs bg-green-400 text-black px-2 py-1 rounded-full font-semibold">
               Available
@@ -35,8 +34,10 @@ const SidebarProfile = () => {
       {/* About Me */}
       <div>
         <p className="text-sm text-white/70 leading-relaxed">
-          I’m Pranjali, a frontend developer passionate about building clean,
-          modern and high-converting websites using React and Tailwind.
+          Frontend developer focused on building clean, high-performing, and
+          user-centered websites using React and Tailwind. I care about
+          simplicity, speed, and creating meaningful digital experiences that
+          help businesses grow.
         </p>
       </div>
 
@@ -50,7 +51,7 @@ const SidebarProfile = () => {
       <div>
         <h2 className="text-xl font-rammetto">Frontend Developer</h2>
         <p className="text-sm text-white/70">
-          India · Available for freelance work
+          India · Available for Full-time & freelance work
         </p>
       </div>
 

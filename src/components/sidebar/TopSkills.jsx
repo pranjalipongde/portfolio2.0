@@ -5,9 +5,13 @@ import { Code, LayoutTemplate, Zap, PenTool } from "lucide-react";
 export default function TopSkills() {
   const skills = [
     { icon: <Code size={16} />, label: "React" },
+    { icon: <Code size={16} />, label: "NextJS" },
     { icon: <LayoutTemplate size={16} />, label: "Tailwind CSS" },
-    { icon: <Zap size={16} />, label: "JavaScript" },
+    { icon: <Zap size={16} />, label: "JavaScript (ES6+)" },
+    { icon: <Code size={16} />, label: "Responsive Design" },
     { icon: <PenTool size={16} />, label: "HTML/CSS" },
+    { icon: <Code size={16} />, label: "Performance Optimization" },
+    { icon: <PenTool size={16} />, label: "Figma to Code" },
   ];
 
   return (
