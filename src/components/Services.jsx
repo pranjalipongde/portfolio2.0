@@ -10,6 +10,14 @@ const Services = () => {
     transition: { duration: 0.4 },
   };
 
+  const highlights = [
+    "Clean, modern, and user‑focused UI design",
+    "Fast turnaround (48 hrs – 7 days)",
+    "Pixel‑perfect builds from Figma/Sketch",
+    "SEO‑friendly + fully responsive",
+    "Clear communication & progress updates",
+  ];
+
   return (
     <section id="services" className="space-y-10">
       <h2 className="text-3xl font-rammetto mb-4">Services</h2>
@@ -66,15 +74,26 @@ shadow-[0_0_15px_rgba(255,238,163,0.2)] transition"
       </div>
 
       {/* Why Choose Me */}
-      <div className="mt-10 border border-white/10 rounded-xl p-6 bg-white/5">
-        <h3 className="text-2xl font-rammetto mb-3">Why Choose Me?</h3>
-        <ul className="list-disc ml-5 space-y-2 text-white/80 text-sm">
-          <li>Clean, modern, and user-focused UI design</li>
-          <li>Fast turnaround time (48hrs to 7 days)</li>
-          <li>Pixel-perfect implementation from Figma/Sketch</li>
-          <li>SEO-friendly + responsive designs</li>
-          <li>Clear communication & project updates</li>
-        </ul>
+      <div className="mt-10 p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm shadow-[0_0_20px_rgba(255,238,163,0.15)]">
+        <h3 className="text-2xl font-rammetto mb-4 flex items-center gap-2">
+          ⭐ Why Choose Me?
+        </h3>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+          {highlights.map((item, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: idx * 0.1 }}
+              className="flex items-start gap-3 p-3 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition cursor-default"
+            >
+              <span className="text-yellow-300 text-lg">✔</span>
+              <p className="text-sm text-white/80 leading-relaxed">{item}</p>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
