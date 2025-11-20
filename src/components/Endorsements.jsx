@@ -44,7 +44,7 @@ export default function Endorsements() {
     <section id="recommendations" className="space-y-6">
       {/* Header with View More */}
       <div className="flex items-center justify-between mb-2">
-        <h2 className="text-3xl font-rammetto">Recommendations</h2>
+        <h2 className="text-3xl font-rammetto">Testimonials</h2>
 
         {visible < endorsementsList.length && (
           <button
