@@ -30,13 +30,9 @@ const Services = () => {
       <div className="grid sm:grid-cols-2 gap-6">
         <motion.div
           {...cardMotion}
-          className="p-5 rounded-xl border border-yellow-300/30 bg-white/5 hover:bg-white/10
-shadow-[0_0_15px_rgba(255,238,163,0.2)] transition"
+          className="p-5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition "
         >
-          <div className="flex items-center gap-3 mb-2">
-            <Sparkles size={20} className="text-yellow-300" />
-            <h4 className="font-semibold text-lg">Landing Pages</h4>
-          </div>
+          <h4 className="font-semibold text-lg mb-1">Landing Pages</h4>
           <p className="text-white/70 text-sm">
             High-converting, responsive landing pages designed for results.
           </p>
@@ -44,13 +40,9 @@ shadow-[0_0_15px_rgba(255,238,163,0.2)] transition"
 
         <motion.div
           {...cardMotion}
-          className="p-5 rounded-xl border border-yellow-300/30 bg-white/5 hover:bg-white/10
-shadow-[0_0_15px_rgba(255,238,163,0.2)] transition"
+          className="p-5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition "
         >
-          <div className="flex items-center gap-3 mb-2">
-            <Code size={20} className="text-yellow-300" />
-            <h4 className="font-semibold text-lg">Website Development</h4>
-          </div>
+          <h4 className="font-semibold text-lg mb-1">Website Development</h4>
           <p className="text-white/70 text-sm">
             Full website builds using React & Tailwind. Fast, scalable, and
             modern.
@@ -59,16 +51,12 @@ shadow-[0_0_15px_rgba(255,238,163,0.2)] transition"
 
         <motion.div
           {...cardMotion}
-          className="p-5 rounded-xl border border-yellow-300/30 bg-white/5 hover:bg-white/10
-shadow-[0_0_15px_rgba(255,238,163,0.2)] transition"
+          className="p-5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition "
         >
-          <div className="flex items-center gap-3 mb-2">
-            <RefreshCcw size={20} className="text-yellow-300" />
-            <h4 className="font-semibold text-lg">Website Redesign</h4>
-          </div>
+          <h4 className="font-semibold text-lg mb-1">Website Redesign</h4>
           <p className="text-white/70 text-sm">
-            Turn an outdated or dull website into a fresh, modern,
-            high-converting design.
+            Turn outdated websites into fresh, high‑converting digital
+            experiences.
           </p>
         </motion.div>
       </div>
